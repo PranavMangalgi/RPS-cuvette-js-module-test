@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div>ROCK<br>PAPER<br>SCISSORS</div>
+        </div>
+        <div class="scores">
+            <div class="comp-score both-scores">
+                <div>Computer <br>Score</div>
+                <span class="score-number" id="comp-score-number">0</span>
+            </div>
+            <div class="player-score both-scores">
+                <div>Your<br> Score</div>
+                <span class="score-number" id="player-score-number">0</span>
+            </div>
+        </div>
+    </header>
+    <main class="play">
+       <div class="rock">
+        <img src="./assets/rock.png" alt="">
+       </div>
+       <div class="scissors">
+        <img src="./assets/scissors.png" alt="">
+       </div>
+       <div class="paper">
+        <img src="./assets/paper.png" alt="">
+       </div>
+    </main>
+    <footer> 
+        <div class="cross">X</div>
+        <div class="game-rules" >
+            <h3>Game Rules</h3>
+            <ul>
+              <li><div>Rock beats scissors, scissors beat paper, and paper beats rock.</div></li>
+              <li><div>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</div></li>
+              <li>
+                <div>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</div>
+              </li>
+              <li><div>If both players lay down the same hand, each player lays down another hand</div></li>
+            </ul>
+          </div>
+          <button id="rules-btn" tabindex="1">Rules</button>
+          <button id="next-btn">Next</button>
+    </footer>
+    
+</body>
+</html>
