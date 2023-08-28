@@ -7,7 +7,7 @@ rules.addEventListener('click',showHideRules)
 crossBtn.addEventListener('click',showHideRules)
 
 function showHideRules(){
-    showRules.style.right = showRules.style.getPropertyValue('right') === `1rem` ? '-25rem':'1rem';
+    showRules.style.right = showRules.style.getPropertyValue('right') === `1rem` ? '-65rem':'1rem';
     crossBtn.style.display = crossBtn.style.getPropertyValue('display') ==='inline-block'?'none':'inline-block';
 }
 
@@ -90,7 +90,7 @@ function updatePage(player, computer, status){
     else if(status=='playerwins'){
         result.textContent = 'YOU WON';
         document.querySelector('#next-btn').classList.remove('inactive');
-        rules.style.marginRight = '6%';
+        rules.style.marginRight = '4rem';
     }else if(status=='pcwins'){
         result.textContent = 'YOU LOST'
     }
