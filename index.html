@@ -23,21 +23,37 @@
             </div>
         </div>
     </header>
-    <main class="play">
-       <div class="rock">
+
+    <main class="play ">
+       <div class="rock" value="rock">
         <img src="./assets/rock.png" alt="">
        </div>
-       <div class="scissors">
+       <div class="scissors" value="scissors">
         <img src="./assets/scissors.png" alt="">
        </div>
-       <div class="paper">
+       <div class="paper" value="paper">
         <img src="./assets/paper.png" alt="">
        </div>
     </main>
+
+    <div class="result inactive">
+        <div class="player-choice ">
+            <div>YOU PICKED</div><img src="./assets/scissors.png" alt=""></div>
+        <div class="result-content">
+            <div >
+                <div class="won-lost"></div>
+                <div>Against PC</div>
+            </div>
+            <button class="play-again-btn">PLAY AGAIN</button>
+        </div>
+        <div class="pc-choice">
+            <div>PC PICKED</div><img src="./assets/paper.png" alt=""></div>
+       </div>
+
     <footer> 
-        <div class="cross">X</div>
+        <div id="cross">X</div>
         <div class="game-rules" >
-            <h3>Game Rules</h3>
+            <h4>Game Rules</h4>
             <ul>
               <li><div>Rock beats scissors, scissors beat paper, and paper beats rock.</div></li>
               <li><div>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</div></li>
@@ -48,8 +64,19 @@
             </ul>
           </div>
           <button id="rules-btn" tabindex="1">Rules</button>
-          <button id="next-btn">Next</button>
+          <button id="next-btn" class="inactive">Next</button>
     </footer>
+
+    <div class="hurray inactive">
+        <div class="trophy">
+            <div>
+                <img src="./assets/trophy.png" alt="">
+            </div>
+        </div>
+        <h2>HURRAY!</h2>
+        <h3>YOU WON THE GAME</h3>
+        <button class="play-again-btn">PLAY AGAIN</button>
+    </div>
     
 </body>
 </html>
