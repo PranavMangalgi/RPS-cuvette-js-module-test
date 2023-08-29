@@ -155,7 +155,7 @@ ul li{
 }
 
 .game-rules{
-    width: 20vw;
+    width: 250px;
     position: absolute;
     right:-19rem; /*change here*/
     bottom: 3.5rem;
